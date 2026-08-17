@@ -21,6 +21,9 @@ app.use(
         callback(error)
       }
     },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-mailbox-token'],
   }),
 )
 
